@@ -1,0 +1,164 @@
+/* Menggunakan Universal Selector (*) untuk mereset margin dan padding */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Styling untuk body (latar belakang gelap, seperti malam di Hotel Del Luna) */
+
+body {
+    background-color: #1a0833;
+    /* Ungu gelap / hampir hitam */
+    color: #f7e6ff;
+    /* Teks putih keunguan */
+    font-family: 'Georgia', serif;
+    /* Font klasik/mewah */
+    padding: 40px;
+    line-height: 1.6;
+    /* Jarak antar baris */
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+
+/* Styling untuk Judul Utama */
+
+h2 {
+    text-align: center;
+    color: #ffd700;
+    /* Emas */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    /* Huruf Kapital [cite: 139] */
+    letter-spacing: 2px;
+    /* Jarak antar huruf [cite: 134] */
+    border-bottom: 2px solid #6a0dad;
+    /* Garis bawah ungu gelap */
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+
+/* Styling untuk fieldset (wadah form) */
+
+fieldset {
+    border: 2px solid #ffd700;
+    /* Border emas */
+    padding: 30px;
+    margin-bottom: 20px;
+    background-color: #2b0d5c;
+    /* Latar belakang ungu lebih terang */
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+    /* Efek bayangan emas */
+    border-radius: 8px;
+    /* Sudut membulat */
+}
+
+
+/* Styling untuk Legend (Judul Fieldset) */
+
+legend {
+    color: #ffd700;
+    /* Emas */
+    background-color: #1a0833;
+    /* Latar belakang yang sama dengan body */
+    padding: 5px 15px;
+    font-weight: bold;
+    border: 1px solid #ffd700;
+    border-radius: 5px;
+}
+
+
+/* Styling untuk Ordered List (ol) */
+
+ol {
+    list-style-type: none;
+    [cite_start]/* Menghilangkan bullet default [cite: 341] */
+    padding-left: 0;
+}
+
+
+/* Styling untuk List Item (li) */
+
+li {
+    margin-bottom: 15px;
+    display: flex;
+    /* Menggunakan flex untuk tata letak yang rapi */
+    flex-direction: column;
+}
+
+
+/* Styling untuk Input, Select (agar seragam dan mewah) */
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #6a0dad;
+    background-color: #3f1a6f;
+    color: #f7e6ff;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+
+/* Efek focus untuk Input dan Select */
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #ffd700;
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+    outline: none;
+}
+
+
+/* Styling untuk Tombol Submit */
+
+input[type="submit"] {
+    display: block;
+    width: 250px;
+    margin: 30px auto 0;
+    padding: 15px 20px;
+    background-color: #ffd700;
+    /* Emas */
+    color: #1a0833;
+    /* Teks gelap */
+    border: none;
+    border-radius: 50px;
+    /* Bentuk yang lebih unik */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+
+/* Efek hover untuk Tombol Submit */
+
+input[type="submit"]:hover {
+    background-color: #ffeb80;
+    transform: scale(1.02);
+}
+
+
+/* Mengatur tata letak radio button */
+
+.radio-group {
+    margin-top: 5px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+
+/* Styling untuk label agar sedikit menonjol */
+
+.radio-group label {
+    font-size: 0.95em;
+    cursor: pointer;
+    display: inline-block;
+}
